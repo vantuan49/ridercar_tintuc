@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color-1: #5CE1E6 ;
+    --primary-color-2: #BE4222 ;
+    --whilte-color: #fff;
+    --text-color: #00000;
+    --background-color: #D9D9D9;
+}
+html {
+    font-family: 'Baloo 2', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width:100%;
+}
+.grid_row {
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.col-8{
+    width: 12.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#header{
+     box-shadow: 0 4px 6px gray;
+     width: 100vw;
+     height:100px ;
+     overflow: hidden;
+}
+.container{
+
+}
+.header_logo{
+
+}
+.logo_link{
+
+}
+.logo_img{
+   width: 90px;
+   margin: 3px 0 0 50px;
+}
+.nav{
+   line-height: 100px;
+    margin-left: 30px;
+}
+.nav_list{
+  display: flex;
+ line-height: 100px;
+
+}
+.nav_list-item{
+   list-style: none;
+   padding: 0 25px;
+}
+.nav_list-item:hover .nav_list-item--link{
+    color: var(--primary-color-1);
+    transition: 0.2s ease-out;
+}
+.nav_list-item--link{
+   text-decoration: none;
+   font-size: 20px;
+   color: var(--text-color);
+   font-weight: 900;
+}
+.nav_list-item--icon{
+     padding: 0 10px;
+}
+.column{
+ width:25%;
+ float:left;
+}
+.san-pham{
+ border-radius:10px;
+ box-shadow: 0 0 5px  gray;
+ padding:14px;
+ margin: 7.6px;
+ overflow: hidden;
+}
+.san-pham .ten:hover{
+color: red;
+font-weight: bolder;
+}
+.ten{
+    font-weight: 900;
+}
+.ten:hover
+.san-pham img{
+ max-width:95%;
+}
+img{
+    width: 100%;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.demo{
+    font-size: 250%;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.tatca{
+    font-size: 250%;
+    font-weight: 900;
+    text-decoration: underline;
+    color: red;
+}
+.phanduoi{
+    width: 300px;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 440px;
+    background-color: #5CE1E6;
+    box-shadow: 0 0 4px;
+    font-weight: 900;
+    
+}
+#footer{
+    height: 600px;
+    background-image: url("/image/bg_footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+#footer::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+.footer_title{
+   font-size: 70px;
+   font-weight: 900;
+   text-shadow: 0 0 5px #fff;
+   color: var(--primary-color-1);
+   padding-top: 30px;
+}
+.footer_content{
+  margin-top: 20px;
+  float: left;
+}
+.content_1{
+    width: 33.3333%;
+}
+.content_2{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_3{
+    width: 25%;
+    margin-left: 100px;
+}
+.content_title{
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+.content_text-list{
+   
+}
+.content_text-list_item{
+   display: flex;
+   align-items: center;
+   list-style: none;
+   padding: 10px 0;
+   
+}
+.fa-solid{
+
+}
+.fa-location-dot{
+
+}
+.text-list_item--icon{
+    color: rgba(255,255,255,0.7);
+} 
+
+.text-list_item--link{
+    font-size: 20px;
+   color: rgba(255,255,255,0.7);
+   text-decoration: none;
+   margin-left: 10px;
+}
+.fa-phone{
+
+}
+.store_list-button{
+   width: 100%;
+   background-color: #fff;
+   text-align: center;
+   border-radius: 5px;
+   padding: 10px 0;
+   margin-top: 10px;
+   transition: all 0.2s ease-out;
+}
+.store_list-button:hover{
+   background-color: #5CE1E6;
+   transition: all 0.2s ease-in;
+   cursor: pointer;
+}
+.store_list-button:hover .store_list-button-link{
+  color: #ffff;
+  font-size: 19px;
+  transition: all 0.2s ease-in;
+}
+.store_list-button-link{
+   text-decoration: none;
+   color: var(--text-color);
+   font-weight: 900;
+   font-size: 20px;
+   transition: all 0.2s ease-out;
+} 
+.fa-envelope{
+
+}
+.social-contact{
+  width: 100%;
+  margin-top: 30px;
+}
+.social-contact_list{
+   display: flex;
+   justify-content: space-around;
+}
+.social-contact_list-item{
+     list-style: none;
+     transition: all 0.2s ease-out;
+    
+}
+.social-contact_list-item:hover{
+   transform: translateY(-10px);
+   transition: all 0.2s ease-in;
+}
+.social-contact_list-item--link{
+   font-size: 40px;
+   color: #ffff;
+}
+.social-contact_list-item--link:hover{
+  
+}
+
+
+.social-contact_list-item--icon{
+
+}
+.fa-brands{
+
+}
+.fa-facebook{
+
+}
+.fa-tiktok{
+
+}
+.fa-youtube{
+
+}
+.fa-instagram{
+
+}
+.content_title{
+
+}
+.content_text{ 
+    font-size: 25px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 50px;
+}
+.info_register{
+  width: 100%; 
+  position: relative;
+}
+.info_register-input{
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 10px;
+  outline: none;
+
+}
+.info_register-btn{
+   width: 100px;
+   height: 34px;
+   font-size: 16px;
+   font-weight: 900;
+   font-family: var(--text-font);
+   color: #ffff;
+   background-color: black;
+   position: absolute;
+   right: 5px;
+   top: 5px;
+   cursor: pointer;
+   box-shadow: inset 0 0 0 0 var(--primary-color-1);
+   transition: all 0.2s ease-out;
+}
+.info_register-btn:hover{
+box-shadow: inset 100px 0 0 0 var(--primary-color-1);
+    transition: all 0.2s ease-in;
+    float: right;
+}
+.xemthem{
+    text-align: center;
+    font-size: 200%;
+}
+.backgroud{
+    position: relative;
+    background-color: red;
+    height: 50px;
+}
+.mauchu{
+    border: 2px solid #ddd0d4;
+    padding: 10px;
+}
+.timxe{
+    margin: 20px;
+    line-height: 50px;
+    font-size: 150%;
+}
+.chu{
+    left: 10px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.chu>li{
+    display: inline-block;
+    margin-right: 300px;
+}
+.vien{
+    border: 2px solid #ddd0d4;
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    line-height: 40px;
+}
+
+.tenxe ul {
+    display: block;
+    line-height: 30px;
+    color: orange;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 0 10px;
+}
+.tenxe>ul>li:hover{
+    display: block;
+}
+.tenxe ul li:hover li{
+   background-color: orangered;
+   color: white;
+}
+.thongtin{
+    margin: 5px;
+}
+.thongtinxe{
+   float: right;
+}
+
+
+
+
+
